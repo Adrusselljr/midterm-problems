@@ -1,10 +1,5 @@
 function isEvenlyDivisible(num1, num2) {
-  if(num1 % num2 === 0) {
-    return true
-  }
-  else {
-    return false
-  }
+  return num1 % num2 === 0
 }
 
 function halfSquare(num) {
