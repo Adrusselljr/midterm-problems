@@ -71,7 +71,6 @@ function containsUpperCase(str) {
     count++
   }
   return count >= 1
-    return true
 }
 
 function containsNonAlphanumeric(str) {
