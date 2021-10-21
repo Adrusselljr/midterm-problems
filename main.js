@@ -50,12 +50,7 @@ function containsDigit(str) {
     if(digits.includes(str[i]))
     count++
   }
-  if(count >= 1) {
-    return true
-  }
-  else {
-    return false
-  }
+  return count >= 1
 }
 
 function containsLowerCase(str) {
@@ -65,12 +60,7 @@ function containsLowerCase(str) {
     if(lowerCase.includes(str[i]))
     count++
   }
-  if(count >= 1) {
-    return true
-  }
-  else {
-    return false
-  }
+  return count >= 1
 }
 
 function containsUpperCase(str) {
@@ -80,12 +70,8 @@ function containsUpperCase(str) {
     if(upperCase.includes(str[i]))
     count++
   }
-  if(count >= 1) {
+  return count >= 1
     return true
-  }
-  else {
-    return false
-  }
 }
 
 function containsNonAlphanumeric(str) {
@@ -95,12 +81,7 @@ function containsNonAlphanumeric(str) {
     if(specialChar.includes(str[i]))
     count++
   }
-  if(count >= 1) {
-    return true
-  }
-  else {
-    return false
-  }
+  return count >= 1
 }
 
 function containsSpace(str) {
@@ -110,12 +91,7 @@ function containsSpace(str) {
       count++
     }
   }
-  if(count >= 1) {
-    return true
-  }
-  else {
-    return false
-  }
+  return count >= 1
 }
 
 function digits(num) {
@@ -168,12 +144,7 @@ function isValidPassword(str) {
       count5++
     }
   }
-  if(count1 >= 1 && count2 >= 1 && count3 >= 1 && count4 >= 1 && count5 === 0) {
-    return true
-  }
-  else {
-    return false
-  }
+  return count1 >= 1 && count2 >= 1 && count3 >= 1 && count4 >= 1 && count5 === 0
 }
 
 function onlyPunchy(arr) {
