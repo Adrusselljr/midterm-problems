@@ -12,15 +12,7 @@ function halfSquare(num) {
 }
 
 function isLong(str) {
-  let count = 0
-  for(let i = 0; i < str.length; i++) {
-    if(str.length >= 15) {
-      return true
-    }
-    else {
-      return false
-    }
-  }
+  return str.length >= 15
 }
 
 function exclaim(str) {
